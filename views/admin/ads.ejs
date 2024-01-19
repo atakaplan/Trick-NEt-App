@@ -12,12 +12,12 @@
                     <thead>
                         <tr>
                             <th>Post</th>
-                            <th>Budget</th>
+                            
                             <th>Where to show ?</th>
                             <th>Status</th>
-                            <th>Payment ID</th>
-                            <th>Started at</th>
-                            <th>End at</th>
+                            
+                            <th>Posting Time</th>
+                            
                         </tr>
                     </thead>
 
@@ -67,12 +67,12 @@
 
                             html += `<tr>
                                 <td><a href='` + mainURL + `/post/` + ad.post._id + `' style='color: blue; text-decoration: underline;'>` + ad.post.caption + savedPathHtml + `</a></td>
-                                <td>$` + ad.budget + `</td>
+                                
                                 <td>` + ad.whereToShow + `</td>
                                 <td>` + ad.status + `</td>
-                                <td><a href='https://dashboard.stripe.com' target='_blank' style='color: blue; text-decoration: underline;'>Stripe</a></td>
+                               
                                 <td>` + new Date(ad.createdAt) + `</td>
-                                <td>` + new Date(ad.endAt) + `</td>
+                                
                             </tr>`
                         }
 
